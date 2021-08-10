@@ -5,6 +5,7 @@ import Home from './Components/Home/Home';
 import Contact from './Components/Contact/Contact';
 import Blog from './Components/Blog/Blog';
 import About from './Components/About/About';
+import Footer from './Components/Footer/Footer';
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
             <Route path="/contact" component={Contact} />
           </Switch>
         </div>
+        <Footer></Footer>
       </Router>
     </>
   );
