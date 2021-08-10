@@ -1,11 +1,11 @@
 import './App.css';
-import Navbar from './Components/Navbar/Navbar';
+import Navbar from './Components/Reuse/Navbar/Navbar';
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-import Home from './Components/Home/Home';
+import Homepage from './Components/Homepage/Homepage/Homepage';
 import Contact from './Components/Contact/Contact';
 import Blog from './Components/Blog/Blog';
 import About from './Components/About/About';
-import Footer from './Components/Footer/Footer';
+import Footer from './Components/Reuse/Footer/Footer';
 
 function App() {
   return (
@@ -14,8 +14,8 @@ function App() {
         <Navbar></Navbar>
         <div className="pages">
           <Switch>
-            <Route exact path="/" component={Home} />
-            <Route path="/home" component={Home} />
+            <Route exact path="/" component={Homepage} />
+            <Route path="/home" component={Homepage} />
             <Route path="/about" component={About} />
             <Route path="/blog" component={Blog} />
             <Route path="/contact" component={Contact} />
